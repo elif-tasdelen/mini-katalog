@@ -93,14 +93,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       letterSpacing: -0.5,
                     ),
                   ),
-                  Badge(
-                    isLabelVisible: cartIds.isNotEmpty,
-                    label: Text('${cartIds.length}'),
-                    child: IconButton(
-                      onPressed: openCart,
-                      iconSize: 30,
-                      icon: const Icon(Icons.shopping_bag_outlined),
-                    ),
+                  IconButton(
+                    onPressed: openCart,
+                    iconSize: 30,
+                    icon: const Icon(Icons.shopping_bag_outlined),
                   ),
                 ],
               ),

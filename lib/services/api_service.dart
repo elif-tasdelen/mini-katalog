@@ -1,7 +1,7 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/services.dart';
-import 'package:http/http.dart' as http;
 
 import '../models/product_model.dart';
 
@@ -12,9 +12,12 @@ class ApiService {
   // Ürünleri API'den çeker, internet yoksa assets içindeki JSON'u kullanır
   Future<List<Product>> fetchProducts() async {
     try {
-      final response = await http.get(Uri.parse(productsUrl));
+      final client = HttpClient();
+      final request = await client.getUrl(Uri.parse(productsUrl));
+      final response = await request.close();
       if (response.statusCode == 200) {
-        final data = jsonDecode(response.body);
+        final body = await response.transform(utf8.decoder).join();
+        final data = jsonDecode(body);
         final List list = data['data'];
         return list.map((e) => Product.fromJson(e)).toList();
       }

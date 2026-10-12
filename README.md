@@ -1,41 +1,14 @@
 # Mini Katalog Uygulaması
 
-Software Persona Mesleki Gelişim Programı – **Mobil Uygulama Geliştirme; Android / iOS** eğitimi kapsamında Flutter ile geliştirilen mini ürün katalog uygulamasıdır.
-
 ## Kısa Açıklama
 
-Uygulamada ürünler bir REST API'den çekilerek GridView ile listelenir. Ürüne tıklandığında detay sayfası açılır ve ürün sepete eklenebilir. Sepet sayfasında eklenen ürünler görüntülenir ve sepetten çıkarılabilir. Sepet işlemleri simülasyon amaçlıdır.
+Flutter ile geliştirilmiş basit bir ürün katalog uygulamasıdır. Ürünler ana sayfada GridView ile listelenir ve arama kutusu ile filtrelenebilir. Ürüne tıklandığında detay sayfası açılır, "Buy Now" butonu ile ürün sepete eklenir. Sepet sayfasında eklenen ürünler görüntülenir ve sepetten çıkarılabilir. Sepet işlemleri simülasyondur.
 
-**Özellikler**
-- Ana sayfa: arama ile filtreleme, banner, GridView ile ürün kartları
-- Ürün detay sayfası: görsel, açıklama, özellikler, fiyat, sepete ekleme
-- Sepet sayfası: ürün listeleme, ürün çıkarma, boş sepet ekranı
-- Named Routes ve Route Arguments ile sayfalar arası veri taşıma
-- JSON verisinin model sınıfına (fromJson / toJson) dönüştürülmesi
-- İnternet bağlantısı olmadığında `assets/data/products.json` dosyasından yerel veri okuma
-- Asset yönetimi (görsel ve JSON)
-
-**Veri Kaynakları (eğitim ve demo amaçlı)**
-- Ürün verileri: https://wantapi.com/products.php
-- Banner görseli: https://wantapi.com/assets/banner.png
+Ürün verileri ve banner görseli eğitim amaçlı olarak https://wantapi.com/products.php ve https://wantapi.com/assets/banner.png adreslerinden alınmaktadır. İnternet bağlantısı olmadığında `assets/data/products.json` dosyasındaki veriler kullanılır.
 
 ## Kullanılan Flutter Sürümü
 
-Flutter FLUTTER_SURUMU (Dart DART_SURUMU)
-
-## Proje Yapısı
-
-```
-lib/
-├── main.dart
-├── components/   # Tekrar kullanılan arayüz parçaları
-├── models/       # Ürün modeli ve route argümanları
-├── services/     # API servisi
-└── views/        # Ana sayfa, ürün detay, sepet
-assets/
-├── images/
-└── data/
-```
+Flutter 3.47.7 (Dart 3.13.5)
 
 ## Çalıştırma Adımları
 
