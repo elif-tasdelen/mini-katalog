@@ -1,0 +1,35 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": 1,
+      "name": "iPhone 15 Pro",
+      "tagline": "Titanium. So strong. So light. So Pro.",
+      "description": "Titanyum gövde, A17 Pro çip ve 48MP ana kameraya sahip akıllı telefon.",
+      "price": "$999",
+      "currency": "USD",
+      "image": "https://wantapi.com/assets/images/iphone.png",
+      "specs": { "chip": "A17 Pro", "material": "Titanium", "camera": "48MP Main" }
+    },
+    {
+      "id": 2,
+      "name": "iPhone 15",
+      "tagline": "New camera. New design. Newphoria.",
+      "description": "A16 Bionic çip ve 48MP ana kameraya sahip alüminyum gövdeli akıllı telefon.",
+      "price": "$799",
+      "currency": "USD",
+      "image": "https://wantapi.com/assets/images/iphone_pink.png",
+      "specs": { "chip": "A16 Bionic", "material": "Aluminum", "camera": "48MP Main" }
+    },
+    {
+      "id": 3,
+      "name": "HomePod mini",
+      "tagline": "Color pop.",
+      "description": "Kompakt boyutta 360 derece ses sunan akıllı hoparlör.",
+      "price": "$99",
+      "currency": "USD",
+      "image": "assets/images/logo.png",
+      "specs": { "size": "3.3 inches", "audio": "360-degree", "colors": "5 colors" }
+    }
+  ]
+}
